@@ -1,0 +1,9 @@
+# dsh-smart-router bundle patch — applied when the package is installed
+# with `dsh plugin --profile web add dsh-smart-router`.
+#
+# A single host row mounts the whole plugin; the profile's own
+# cordis.patch.yml is applied AFTER bundle layers and wins per row.
+
+- insert:
+    - id: smart-router
+      name: dsh-smart-router
